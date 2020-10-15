@@ -381,6 +381,22 @@
   </joint>
   <link name="range_rr"></link>
 
+  <joint name="range_ri_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0.0 -0.075 0.0515" rpy="0 0 -1.57 "/>
+    <parent link="base_link"/>
+    <child link="range_ri"/>
+  </joint>
+  <link name="range_ri"></link>
+
+  <joint name="range_le_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0.0 0.075 0.0515" rpy="0 0 1.57 "/>
+    <parent link="base_link"/>
+    <child link="range_le"/>
+  </joint>
+  <link name="range_le"></link>
+
   <joint name="magnetic_joint" type="fixed">
     <axis xyz="0 1 0" />
     <origin xyz="0 0 0" rpy="0 0 0" />

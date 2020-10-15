@@ -279,10 +279,85 @@
       <declination>0.0</declination>
       <inclination>60.0</inclination>
       <offset>0.0 0.0 0.0</offset>
-      <drift>0.0 0.0 0.0</drift>
-      <driftFrequency>0.00027 0.00027 0.00027</driftFrequency>
-      <gaussianNoise>1.3e-2 1.3e-2 1.3e-2</gaussianNoise>
+      <!-- <drift>0.0 0.0 0.0</drift> -->
+      <!-- <driftFrequency>0.0 0.0 0.0</driftFrequency> -->
+      <gaussianNoise>6e-7 6e-7 6e-7</gaussianNoise>
+      <useMagneticFieldMsgs>true</useMagneticFieldMsgs>
     </plugin>
+  </gazebo>
+
+  <gazebo reference="range_ri">
+    <sensor type="ray" name="range_ri">
+      <pose>0 0 0 0 0 0</pose>
+      <update_rate>5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>5</samples>
+            <resolution>1.0</resolution>
+            <min_angle>-0.05</min_angle>
+            <max_angle>0.05</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>5</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.05</min_angle>
+            <max_angle>0.05</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.01</min>
+          <max>0.9</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+      <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+        <gaussianNoise>0.005</gaussianNoise>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>5</updateRate>
+        <topicName>range/ri</topicName>
+        <frameName>range_ri</frameName>
+        <fov>0.1</fov>
+        <radiation>ultrasound</radiation>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="range_le">
+    <sensor type="ray" name="range_le">
+      <pose>0 0 0 0 0 0</pose>
+      <update_rate>5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>5</samples>
+            <resolution>1.0</resolution>
+            <min_angle>-0.05</min_angle>
+            <max_angle>0.05</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>5</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.05</min_angle>
+            <max_angle>0.05</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.01</min>
+          <max>0.9</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+      <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+        <gaussianNoise>0.005</gaussianNoise>
+        <alwaysOn>true</alwaysOn>
+        <updateRate>5</updateRate>
+        <topicName>range/le</topicName>
+        <frameName>range_le</frameName>
+        <fov>0.1</fov>
+        <radiation>ultrasound</radiation>
+      </plugin>
+    </sensor>
   </gazebo>
 
   <gazebo reference="range_fl">
