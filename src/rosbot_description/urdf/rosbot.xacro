@@ -381,4 +381,12 @@
   </joint>
   <link name="range_rr"></link>
 
+  <joint name="magnetic_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="magnetic_link" />
+  </joint>
+  <link name="magnetic_link"></link>
+
 </robot>

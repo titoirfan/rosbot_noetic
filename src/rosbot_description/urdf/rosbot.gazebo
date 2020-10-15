@@ -269,6 +269,22 @@
     </sensor>
   </gazebo>
 
+  <gazebo>
+    <plugin filename="libhector_gazebo_ros_magnetic.so" name="magnetic_plugin">
+      <updateRate>10.0</updateRate>
+      <bodyName>magnetic_link</bodyName>
+      <topicName>magnetic</topicName>
+      <magnitude>1.0</magnitude>
+      <referenceHeading>0.0</referenceHeading>
+      <declination>0.0</declination>
+      <inclination>60.0</inclination>
+      <offset>0.0 0.0 0.0</offset>
+      <drift>0.0 0.0 0.0</drift>
+      <driftFrequency>0.00027 0.00027 0.00027</driftFrequency>
+      <gaussianNoise>1.3e-2 1.3e-2 1.3e-2</gaussianNoise>
+    </plugin>
+  </gazebo>
+
   <gazebo reference="range_fl">
     <sensor type="ray" name="range_fl">
       <pose>0 0 0 0 0 0</pose>
