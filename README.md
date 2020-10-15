@@ -1,10 +1,10 @@
-# rosbot_description #
+# rosbot_soca #
 
-URDF model for Gazebo integrated with ROS.
+URDF model for Gazebo integrated with ROS. I added a magnetometer and a few rangefinder to the model for my project.
 
 ## Installation. ## 
 
-We assume that you are working on Ubuntu 16.04 and already have installed ROS Kinetic. If not, follow the [ROS install guide](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+We assume that you are working on Ubuntu 16.04 and already have installed ROS Kinetic. If not, follow the [ROS install guide](http://wiki.ros.org/kinetic/Installation/Ubuntu). **Update**: tested and works well in ROS Noetic.
 
 Prepare the repository:
 ```
