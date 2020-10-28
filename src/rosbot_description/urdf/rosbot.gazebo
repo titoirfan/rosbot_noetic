@@ -290,6 +290,7 @@
     <sensor type="ray" name="range_ri">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
@@ -327,6 +328,7 @@
     <sensor type="ray" name="range_le">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
@@ -364,6 +366,7 @@
     <sensor type="ray" name="range_fl">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
@@ -401,6 +404,7 @@
     <sensor type="ray" name="range_fr">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
@@ -438,6 +442,7 @@
     <sensor type="ray" name="range_rl">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
@@ -475,6 +480,7 @@
     <sensor type="ray" name="range_rr">
       <pose>0 0 0 0 0 0</pose>
       <update_rate>5</update_rate>
+      <visualize>false</visualize>
       <ray>
         <scan>
           <horizontal>
