@@ -308,7 +308,7 @@
       <bodyName>magnetic_link</bodyName>
       <topicName>magnetic</topicName>
       <magnitude>1.0</magnitude>
-      <referenceHeading>0.0</referenceHeading>
+      <referenceHeading>90.0</referenceHeading>
       <declination>0.0</declination>
       <inclination>60.0</inclination>
       <offset>0.0 0.0 0.0</offset>
